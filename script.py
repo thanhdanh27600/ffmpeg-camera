@@ -30,7 +30,7 @@ def cameraJob():
     id = datetime.now().strftime("%m-%d-%Y %H:%M:%S")
     image_file = folder + "/" + f'{id}.jpg'
     loading = True
-    ffmpeg.input(rtsp).output(image_file, vframes=1).global_args('-ss', '00:00:00').run()
+    ffmpeg.input(rtsp).output(image_file, vframes=1).global_args('-ss', '00:00:01').run()
     upload_file = open(image_file, "rb")
     try:
         response = requests.post(slackUrl, data={"channels":slackChannel , "token": slackToken}, files= {"file": upload_file})
