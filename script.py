@@ -7,8 +7,8 @@ from ffmpy import FFmpeg
 
 slackUrl = "https://slack.com/api/files.upload"
 # ip = 'thanhdanh27600.vinaddns.com'
-# ip = '192.168.1.233'
-ip = '100.111.139.131'
+ip = '192.168.1.233'
+# ip = '100.111.139.131'
 rtsp = f'rtsp://admin:YNTYGQ@{ip}/h264/ch1/main/av_stream'
 slackToken = "x" + "ox" + "p-3939113519460-"+ "3933698243349" + "-3949312327617-fe9e36b3e09c009cb2c2394153d565d1"
 slackChannel = "C03TC176FDL"
